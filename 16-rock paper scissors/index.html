@@ -1,27 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piedra, papel y tijera</title>
-</head>
-<body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Piedra Papel o Tijeras</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
     <header>
-        <h1>Piedra, papel y tijera</h1>
+      <h1>Piedra, Papel o Tijera</h1>
     </header>
+
     <div class="score-board">
-        <div id = "user-label" class="badge">user</div>
-        <div id = "computer-label" class="badge">comp</div>
-        <span id = "user-score">0</span>:<span id = "computer-score">0</span>
-</div>
+      <div id="user-label" class="badge">usuario</div>
+      <div id="computer-label" class="badge">computadora</div>
+      <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
 
     <div class="result">
-        <p>Paper covers rock, You Win!</p>
+        <p>Piedra Papel o Tijeras. Tú ganas!</p>
     </div>
 
     <div class="choices">
-        .choice
+      <div id="r" class="choice">
+          <img src="Images/rock.png" alt="">
+      </div>
+      <div id="p" class="choice">
+          <img src="Images/paper.png" alt="">
+      </div>
+      <div id="s" class="choice">
+          <img src="Images/scissors.png" alt="">
+      </div>
     </div>
-</body>
+
+    <p id="action-message">!Haz tu movimiento¡</p>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
 </html>
